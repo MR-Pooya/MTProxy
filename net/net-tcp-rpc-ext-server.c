@@ -801,10 +801,10 @@ void tcp_rpc_add_proxy_domain (const char *domain) {
   info->next = *bucket;
   *bucket = info;
 
-  if (!allow_only_tls) {
     allow_only_tls = 1;
     default_domain_info = info;
-  }
+//   if (!allow_only_tls) {
+//   }
 }
 
 void tcp_rpc_init_proxy_domains() {
